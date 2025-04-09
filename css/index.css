@@ -1,0 +1,177 @@
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Try different path options */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/school-background.jpg');
+    /* If that doesn't work, try this: */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/school-background.jpg'); */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* viewport height */
+}
+
+.container {
+    flex: 1; /* This makes the container take up all available space */
+}
+
+.footer {
+    margin-top: auto; /* This pushes the footer down */
+}
+/* Rest of the CSS remains the same */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    margin: 30px 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.card {
+    background-color: rgba(48, 48, 48, 0.85);
+    color: white;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #A9A9A9;
+    font-weight: 100;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #303030;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #f0f0f0;
+}
+
+.admin-section {
+    margin-top: 40px;
+}
+
+.footer {
+    background-color: rgba(48, 48, 48, 0.9);
+    color: white;
+    padding: 30px 0;
+    margin-top: 60px;
+    backdrop-filter: blur(5px);
+}
+/* Footer enhancements */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #A9A9A9;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.copyright {
+    margin-top: 30px;
+    border-top: 1px solid rgba(169, 169, 169, 0.3);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer p {
+    margin: 5px 0;
+    color: #A9A9A9;
+    font-weight: 100;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,71 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-left: 20px
+
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+  
+}
+.nav-links li {
+    margin-left: 20px;
+    padding-right: 20px
+
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+.navbar ul{
+    display: flex
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;  /* Stack items vertically */
+        text-align: center;      /* Center content */
+    }
+
+    .navbar ul {
+        flex-direction: column;  /* Stack navbar items vertically */
+    }
+
+    .navbar ul li {
+        margin: 10px 0; /* Add vertical spacing between items */
+    }
+}

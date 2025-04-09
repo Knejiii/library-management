@@ -1,0 +1,59 @@
+ul {
+    list-style: none;
+}
+
+.nav_container {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    background-color: #303030;
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title_school {
+    font-weight: 100;
+    font-family: "Inter", sans-serif;
+    color: #A9A9A9;
+}
+
+.title_page {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.navbar_items {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbar_ul {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar_ul_auth {
+    display: flex;
+    gap: 20px;
+}
+
+.nav_link {
+    text-decoration: none;
+    font-weight: 100;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+
+.nav_user {
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
+    color: #A9A9A9;
+}
