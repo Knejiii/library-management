@@ -80,6 +80,54 @@ updateOverdueBooks();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
+    <style>
+    /* Make text white and more visible on dark background */
+    body {
+        color: #fff !important;
+    }
+    
+    /* Make table text white */
+    .table {
+        color: #fff !important;
+    }
+    
+    /* Make alerts more visible */
+    .alert {
+        color: #000;
+        font-weight: bold;
+    }
+    
+    /* Make time displays more visible */
+    #current-time, .text-muted {
+        color: #fff !important;
+        font-weight: bold;
+    }
+    
+    /* Improve visibility of table headers */
+    .table-dark th {
+        background-color: #2a2a2a !important;
+    }
+    
+    /* Keep the table row highlighting but improve contrast */
+    .table-danger {
+        background-color: rgba(220, 53, 69, 0.7) !important;
+        color: #fff !important;
+    }
+    
+    .table-warning {
+        background-color: rgba(255, 193, 7, 0.7) !important;
+        color: #000 !important;
+        font-weight: bold;
+    }
+    
+    /* Secondary table styling */
+    .table-secondary, .table-secondary th {
+        background-color: #4a4a4a !important;
+        color: #fff !important;
+    }
+</style>
+
 <body>
     <?php include('navbar.php'); ?>
     
